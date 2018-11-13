@@ -20,7 +20,6 @@
     "client-test": "cd client && npm run test",
     "\n# Container commands": "",
     "stop-containers": "docker stop $(docker ps -a -q)",
-    "first-run": "npm run api-npm-i && npm run stop-containers && npm run create-client",
     "show-containers": "docker ps --format 'table {{.ID}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}'",
     "\n# General commands": "After executing the `npm run aeboilerplate` command, run `npm build && npm start` to use the built version",
     "install-dependencies": "npm run client-npm-i && npm run api-npm-i && npm run stop-containers",
